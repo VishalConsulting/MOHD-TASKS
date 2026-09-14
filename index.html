@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MOHD TASKS | Without Investment Work</title>
+
+<!-- ================= META PIXEL ================= -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2417951088736856');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2417951088736856&ev=PageView&noscript=1"/>
+</noscript>
+<!-- =============== END META PIXEL =============== -->
+
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  color:#fff7ed;
+  background:
+    radial-gradient(circle at 20% 10%,rgba(139,92,246,.25),transparent 30%),
+    radial-gradient(circle at 85% 85%,rgba(255,61,129,.18),transparent 35%),
+    #0b0920;
+  overflow-x:hidden;
+}
+
+.container{
+  width:92%;
+  max-width:650px;
+  margin:auto;
+  padding:35px 0;
+  text-align:center;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo{
+  font-size:36px;
+  font-weight:900;
+  letter-spacing:2px;
+
+  background:linear-gradient(
+    90deg,
+    #ff9d42,
+    #ff3d81,
+    #8b5cf6
+  );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+
+  text-shadow:0 0 22px rgba(255,61,129,.25);
+}
+
+.subtitle{
+  margin-top:7px;
+  color:#e7dff3;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+
+/* ================= TASK RATE ================= */
+
+.task-rate{
+  margin:25px auto;
+  width:max-content;
+  max-width:100%;
+  padding:12px 22px;
+  border-radius:50px;
+
+  color:#fff;
+
+  border:1px solid rgba(255,105,180,.8);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,61,129,.30),
+      rgba(139,92,246,.25)
+    );
+
+  box-shadow:
+    0 0 25px rgba(255,61,129,.20),
+    inset 0 0 18px rgba(255,255,255,.05);
+
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:1.5px;
+}
+
+.task-icon{
+  display:inline-grid;
+  place-items:center;
+
+  width:24px;
+  height:24px;
+
+  margin-right:6px;
+  border-radius:50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff3d81,
+      #8b5cf6
+    );
+
+  color:#fff;
+
+  box-shadow:
+    0 0 14px rgba(255,61,129,.55);
+
+  font-size:15px;
+}
+
+
+/* ================= HEADING ================= */
+
+h1{
+  margin-top:28px;
+
+  font-size:42px;
+  line-height:1.1;
+  font-weight:900;
+}
+
+.description{
+  margin:15px auto;
+
+  color:#ddd3ec;
+
+  line-height:1.6;
+  font-size:16px;
+}
+
+
+/* ================= TELEGRAM BUTTON ================= */
+
+.telegram-btn{
+  position:relative;
+
+  display:block;
+
+  margin:25px auto;
+
+  width:100%;
+
+  padding:18px;
+
+  border-radius:16px;
+
+  background:
+    linear-gradient(
+      100deg,
+      #ff9d42,
+      #ff3d81,
+      #8b5cf6
+    );
+
+  color:#170d22;
+
+  text-decoration:none;
+
+  font-size:19px;
+  font-weight:900;
+
+  box-shadow:
+    0 0 25px rgba(255,61,129,.35);
+
+  transition:.2s;
+
+  overflow:hidden;
+}
+
+.telegram-btn:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 0 40px rgba(255,61,129,.55);
+}
+
+.telegram-btn:active{
+  transform:scale(.98);
+}
+
+
+/* BUTTON SHINE */
+
+.telegram-btn::before{
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:-100%;
+
+  width:55%;
+  height:100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.35),
+      transparent
+    );
+
+  transform:skewX(-20deg);
+
+  animation:shine 3s infinite;
+}
+
+@keyframes shine{
+
+  0%{
+    left:-100%;
+  }
+
+  45%,100%{
+    left:150%;
+  }
+
+}
+
+
+/* ================= CARDS ================= */
+
+.cards{
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:14px;
+
+  margin-top:25px;
+}
+
+.card{
+  padding:22px 14px;
+
+  border:1px solid rgba(139,92,246,.30);
+
+  border-radius:18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(27,24,55,.95),
+      rgba(15,13,35,.95)
+    );
+
+  box-shadow:
+    inset 0 0 20px rgba(139,92,246,.05);
+}
+
+.card-icon{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.card h3{
+  font-size:16px;
+  color:#fff7ed;
+}
+
+.card p{
+  margin-top:7px;
+
+  color:#d7cbea;
+
+  font-size:13px;
+
+  line-height:1.4;
+}
+
+
+/* ================= START BOX ================= */
+
+.start{
+  margin-top:30px;
+
+  padding:22px 15px;
+
+  border-radius:18px;
+
+  background:
+    rgba(139,92,246,.09);
+
+  border:
+    1px solid rgba(139,92,246,.30);
+}
+
+.start h2{
+  font-size:22px;
+  line-height:1.3;
+}
+
+.start p{
+  margin-top:10px;
+
+  color:#d8cee8;
+
+  font-size:13px;
+
+  line-height:1.5;
+}
+
+
+/* ================= STATS ================= */
+
+.stats{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:10px;
+
+  margin-top:25px;
+}
+
+.stat{
+  flex:1;
+
+  padding:15px 5px;
+
+  border-radius:14px;
+
+  background:
+    rgba(255,255,255,.05);
+}
+
+.stat strong{
+  display:block;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff9d42,
+      #ff3d81
+    );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+
+  font-size:20px;
+}
+
+.stat span{
+  display:block;
+
+  margin-top:4px;
+
+  color:#d2c7df;
+
+  font-size:11px;
+}
+
+
+/* ================= COUNTDOWN ================= */
+
+.countdown{
+  margin-top:22px;
+
+  color:#d8cee8;
+
+  font-size:14px;
+}
+
+#timer{
+  color:#ff5b91;
+
+  font-size:22px;
+
+  font-weight:900;
+}
+
+
+/* ================= DISCLAIMER ================= */
+
+.disclaimer{
+  margin-top:25px;
+
+  color:#9d94ad;
+
+  font-size:11px;
+
+  line-height:1.5;
+}
+
+footer{
+  margin-top:28px;
+
+  color:#81778f;
+
+  font-size:12px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:500px){
+
+  h1{
+    font-size:34px;
+  }
+
+  .logo{
+    font-size:30px;
+  }
+
+  .task-rate{
+    font-size:16px;
+  }
+
+  .telegram-btn{
+    padding:17px 10px;
+    font-size:17px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+  <!-- LOGO -->
+
+  <div class="logo">
+    MOHD TASKS
+  </div>
+
+
+  <div class="subtitle">
+    WITHOUT INVESTMENT WORK
+  </div>
+
+
+  <!-- TASK RATE -->
+
+  <div class="task-rate">
+
+    <span class="task-icon">✓</span>
+
+    1 TASK = ₹250
+
+  </div>
+
+
+  <!-- MAIN HEADING -->
+
+  <h1>
+    Join us on Telegram
+  </h1>
+
+
+  <p class="description">
+
+    Simple daily tasks. Join our Telegram channel
+    and get task updates directly.
+
+  </p>
+
+
+  <!-- TELEGRAM BUTTON -->
+
+  <a
+    href="https://t.me/vishalconsulting1"
+    class="telegram-btn"
+    id="telegramBtn"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    💬 JOIN TELEGRAM NOW
+
+  </a>
+
+
+  <!-- CARDS -->
+
+  <div class="cards">
+
+
+    <div class="card">
+
+      <div class="card-icon">
+        💰
+      </div>
+
+      <h3>
+        Without Investment
+      </h3>
+
+      <p>
+        No joining fee or upfront cost.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-icon">
+        📋
+      </div>
+
+      <h3>
+        Daily Task
+      </h3>
+
+      <p>
+        Get simple task updates regularly.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-icon">
+        ⚡
+      </div>
+
+      <h3>
+        Instant Setup
+      </h3>
+
+      <p>
+        Join and check the available tasks.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-icon">
+        📲
+      </div>
+
+      <h3>
+        Telegram Updates
+      </h3>
+
+      <p>
+        Task updates are shared through Telegram.
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- START BOX -->
+
+  <div class="start">
+
+    <h2>
+      Start without any upfront cost — join now
+    </h2>
+
+    <p>
+      Simple daily tasks with regular updates.
+      Results and earnings can vary and are not guaranteed.
+    </p>
+
+  </div>
+
+
+  <!-- STATS -->
+
+  <div class="stats">
+
+
+    <div class="stat">
+
+      <strong>
+        5K+
+      </strong>
+
+      <span>
+        MEMBERS
+      </span>
+
+    </div>
+
+
+    <div class="stat">
+
+      <strong>
+        100%
+      </strong>
+
+      <span>
+        FREE
+      </span>
+
+    </div>
+
+
+    <div class="stat">
+
+      <strong>
+        24/7
+      </strong>
+
+      <span>
+        UPDATES
+      </span>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- COUNTDOWN -->
+
+  <div class="countdown">
+
+    Telegram opening in
+
+    <span id="timer">
+      10
+    </span>
+
+    s...
+
+  </div>
+
+
+  <p class="disclaimer">
+
+    Disclaimer: Earnings/results are not guaranteed and may vary.
+    Do not pay anyone claiming to guarantee income.
+
+  </p>
+
+
+  <footer>
+    Telegram Updates
+  </footer>
+
+
+</div>
+
+
+
+<script>
+
+/* =========================================
+   TELEGRAM LINK
+========================================= */
+
+const TELEGRAM_LINK =
+"https://t.me/vishalconsulting1";
+
+
+/* =========================================
+   TELEGRAM BUTTON
+========================================= */
+
+const telegramBtn =
+document.getElementById("telegramBtn");
+
+
+const timer =
+document.getElementById("timer");
+
+
+/* =========================================
+   TELEGRAM CLICK TRACKING
+   Meta Pixel:
+   Lead + Custom TelegramClick
+========================================= */
+
+telegramBtn.addEventListener("click", function(){
+
+  if(typeof fbq === "function"){
+
+    fbq(
+      "track",
+      "Lead"
+    );
+
+    fbq(
+      "trackCustom",
+      "TelegramClick"
+    );
+
+  }
+
+});
+
+
+/* =========================================
+   10 SECOND AUTO OPEN
+========================================= */
+
+let time = 10;
+
+timer.textContent = time;
+
+
+const countdown =
+setInterval(function(){
+
+  time--;
+
+  timer.textContent = time;
+
+
+  if(time <= 0){
+
+    clearInterval(countdown);
+
+
+    /* META PIXEL AUTO OPEN EVENT */
+
+    if(typeof fbq === "function"){
+
+      fbq(
+        "trackCustom",
+        "TelegramAutoOpen"
+      );
+
+    }
+
+
+    /* OPEN TELEGRAM */
+
+    window.location.href =
+      TELEGRAM_LINK;
+
+  }
+
+},1000);
+
+</script>
+
+
+</body>
+</html>
